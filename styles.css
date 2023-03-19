@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color: white; */
     font-family: 'Playfair Display', serif;
 }
 
@@ -227,7 +226,6 @@ main {
 
 #photoshoot-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: 544px;
@@ -237,7 +235,7 @@ main {
 }
 
 .container {
-    position: relative; /* Hace que el contenedor sea la referencia para los elementos internos */
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,18 +247,18 @@ main {
     align-items: center;
     justify-content:space-evenly;
     flex-direction: column;
-    position: absolute; /* Coloca el texto encima de la imagen */
+    position: absolute; 
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Añade un fondo transparente al contenedor de información */
-    color: whitesmoke; /* Cambia el color del texto a blanco */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: whitesmoke; 
     width: 100%;
     height: 100%;
-    opacity: 0; /* Oculta el contenedor de información de inicio */
+    opacity: 0;
     transition: opacity 0.5s ease;
   }
   .container:hover .info {
-    opacity: 1; /* Muestra el contenedor de información al hacer "hover" en el contenedor */
+    opacity: 1; 
     display: flex;
     flex-wrap: wrap;
  }
