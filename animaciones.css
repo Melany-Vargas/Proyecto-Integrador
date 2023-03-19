@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 146px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.hero-data h1 {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+
+.hero-data p {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+.hero-data a {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
